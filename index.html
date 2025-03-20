@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Город Седона | Главная</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -35,14 +36,16 @@
             <span class="hotel-count">12</span>
           </a>
         </li>
+        <li class="navigation-item">
+          <a class="button button-cta" href="catalog.html">
+            Хочу сюда!
+          </a>
+        </li>
       </ul>
-      <a class="button button-cta" href="catalog.html">
-        Хочу сюда!
-      </a>
     </nav>
   </header>
   <main class="main-container">
-    <section class="hero" style="background-color: lightblue ">
+    <section class="hero">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
       <img class="hero-image" src="images/icons/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks">
     </section>
@@ -106,7 +109,7 @@
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <p class="booking-question">Заинтересовались?</p>
       <p class="booking-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="button button-booking" type="button">Поиск гостиницы в Седоне</button>
+      <button class="button booking-button" type="button">Поиск гостиницы в Седоне</button>
     </section>
     <section class="subscription">
       <h2 class="subscription-title">Подпишитесь на рассылку</h2>
@@ -114,7 +117,7 @@
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="subscription-email">Укажите e-mail</label>
         <input class="field" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
-        <button class="button button-subscription" type="submit">Подписаться</button>
+        <button class="button subscription-button" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
