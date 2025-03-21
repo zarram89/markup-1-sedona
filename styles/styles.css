@@ -51,8 +51,11 @@ body {
 
 .hero {
   background-color: #7db54f;
-  background-image: url("../images/index/hero-background.jpg");
-  background-size: 100% auto;
+  background-image:
+    url("../images/icons/hero-mask.svg"),
+    url("../images/index/hero-background.jpg");
+  background-size: 100% auto, cover;
+  background-position: center bottom, center;
   background-repeat: no-repeat;
 }
 
@@ -73,6 +76,14 @@ body {
   line-height: 26px;
 }
 
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
 .advantages-item .advantages-subtitle {
   font-size: 24px;
   line-height: 28px;
@@ -80,13 +91,13 @@ body {
   color: #000000;
 }
 
-.advantages-item-wide .advantages-subtitle {
-  color: #ffffff;
-}
-
 .advantages-item-wide {
   color: #ffffff;
   background-color: #82b3d3;
+}
+
+.advantages-item-wide .advantages-subtitle {
+  color: #ffffff;
 }
 
 .features {
@@ -104,6 +115,14 @@ body {
 .features-description {
   font-size: 22px;
   line-height: 26px;
+}
+
+.features-item {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.features-item:nth-last-child(2) {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .features-item .features-subtitle{
@@ -136,6 +155,7 @@ body {
   background-color: #7db54f;
   background-image: url("../images/index/subscription-background.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -158,6 +178,7 @@ body {
   background-color: #7db54f;
   background-image: url("../images/catalog/filter-background.jpg");
   background-repeat: no-repeat;
+  background-position: center top;
   background-size: cover;
 }
 
@@ -187,4 +208,58 @@ body {
 
 .catalog-button-reset {
   background-color: transparent;
+}
+
+.hotels-find {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.product-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.product-card-fav {
+  background-color: #82b3d3;
+}
+
+.product-card-fav-active {
+  background-color:#7db54f;
+}
+
+.product-card-rating {
+  color: #333333;
+  background-color: #f2f2f2;;
+}
+
+.pagination-link {
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.inner-page .subscription {
+  background-color: #ffffff;
+  background-image: none;
+}
+
+.inner-page .subscription-title {
+  color: #000000;
+}
+
+.inner-page .subscription-description {
+  color: #333333;
 }
